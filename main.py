@@ -1089,3 +1089,4 @@ b = pattern.findall((string)) # return all patterns in the string
 print(b)
 c= pattern.fullmatch(string) # we would need to have the whole string to compare re.compile('full string')
 print(c)
+
