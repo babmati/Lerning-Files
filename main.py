@@ -1073,21 +1073,28 @@ pattern = re.compile('this')
 
 string= 'search this inside of this text please'
 
-print('search' in string)
-#hot to use instead of this
-
-# print(re.search('this',string))
-a = re.search('this',string)
-print(a.span())  # return positions in the string as a tuple
-print(a.start()) # return start position
-print(a.group()) # return the pattern if found
-print(a.end()) # return position end in string
-
-a = pattern.search(string)
-print(a.group()) # return the pattern if found
-b = pattern.findall((string)) # return all patterns in the string
-print(b)
-c= pattern.fullmatch(string) # we would need to have the whole string to compare re.compile('full string')
-print(c)
+# print('search' in string)
+# #hot to use instead of this
+#
+# # print(re.search('this',string))
+# a = re.search('this',string)
+# print(a.span())  # return positions in the string as a tuple
+# print(a.start()) # return start position
+# print(a.group()) # return the pattern if found
+# print(a.end()) # return position end in string
+#
+# a = pattern.search(string)
+# print(a.group()) # return the pattern if found
+# b = pattern.findall((string)) # return all patterns in the string
+# print(b)
+# c= pattern.fullmatch(string) # we would need to have the whole string to compare re.compile('full string')
+# print(c)
 
 # este cambio es de
+
+def gitlearning():
+
+    print('Aprendimos a usar Github con Pycharm')
+
+
+gitlearning()
