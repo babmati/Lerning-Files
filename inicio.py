@@ -3,6 +3,9 @@
 # print (4-2)
 # print (2*4)
 # print (type(4/2))
+# print (type({1,2,3}))
+# print(type((1,2,3)))
+# print(type([1,2,3]))
 
 # Int
 # Float
@@ -34,7 +37,7 @@
 # string concatenation
 # print('hello' + 'Byron')
 # print('hello'+ ' ' +str(5))
-
+#
 # a = str(100)
 # b = int(a)
 # c = type(b)
@@ -60,12 +63,12 @@
 # c **  power of
 # c * /  muliple, division
 # c + -  sum, substraction
-# c print(20+3*4)
+# print(20+3*4)
 
 
 # c #data type: complex
 # print(bin(5))
-# print(int('0b101', 2))
+# print(int('0b101',2))
 
 
 # c CONSTANTS= things that are mean
@@ -100,6 +103,7 @@
 # relationship_status= 'single'
 # relationship_status= 'It\'s complicated'
 # print(name+ ' '+ relationship_status)
+# print(f"{name} tiene {age-25} años y {relationship_status} ")
 
 
 # birth_year= input('what year were you born')
@@ -118,11 +122,10 @@
 
 # username = input("favor indique su usuario")
 # password= input("favor indique su contraseña")
-
+#
 # password_lenght = len(password)
 # hidden_password = ('*'* password_lenght)
 
-# print ( username +' '+ 'your password ' + hidden_password + ' is ' +str(password_lenght) + ' long' )
 
 
 # c  LISTS
@@ -140,13 +143,16 @@
 # print(amazon_cart[0:2])
 # print(amazon_cart[0::2])
 # print(amazon_cart[::-1])
-
+#
 # amazon_cart[0]='Laptop'
 # new_cart = amazon_cart[0:3] # if you use range[:] creates a copy and not replace it
 # new_cart[0] ='honda'
 # print(amazon_cart[0:3])
 # print(amazon_cart)
 # print(new_cart)
+#
+# amazon_cart.insert(0,"kawa")
+# print(amazon_cart)
 
 
 # #c  Matrix
@@ -155,14 +161,14 @@
 #   [4,5,6],
 #   [7,8,9]
 # ]
-
+#
 # print(matrix [0][1], matrix[2][0])
 
 
 # c build in methods
 
 # c adding
-# basket =[1,2,2,3,4,5,5]
+# basket =[1,2,2,3,4,5,5,5,6]
 # print(len(basket))
 # print(basket)
 # new_list = basket.append(100)
@@ -172,7 +178,7 @@
 
 # #c removing
 
-# basket.pop()
+# basket.pop()  # removes the last digits of list
 # basket.remove(30)
 # print(basket)
 # #basket.clear() # removes everything fromthe list
@@ -194,15 +200,15 @@
 # print (list(range(0,101)))
 
 
-# sentence ='!'
-# new_sentence = sentence.join(['hi ','my ','name ','is ','b'])
+# sentence ='! '
+# new_sentence = sentence.join(['hi','my','name','is','b'])
 # print(new_sentence)
 
 
 # #c Lists unpacking
 
 # a,b,c, *other= [1,2,3,4,5,6,7,8,9]
-
+#
 # print(a)
 # print(b)
 # print(c)
@@ -236,31 +242,34 @@
 # 'c': True
 # }
 #
-# print(dictionary1, "\n")
+# print(dictionary1)
+#
+# # for i in dictionary1.values():
+# #     print(i , "\n")
 
-dictionary2=[
-{
-'a':[1,2,3,4],
-'b':'Hello',
-'c': True
-},
-{
-'d':[5,6,7,8],
-'b':'Byron',
-'c': True
-
-}
-]
+# dictionary2=[
+# {
+# 'a':[1,2,3,4],
+# 'b':'Hello',
+# 'c': True
+# },
+# {
+# 'd':[5,6,7,8],
+# 'b':'Byron',
+# 'c': True
+#
+# }
+# ]
 # print(dictionary2[1] ['d'][1] )
 
-
-user ={
-#names are called keys in dictonaries to access the data
-'basket': [1,2,3],
-'greet': 'Hello',
-  'age': 20
-}
-
+#
+# user ={
+# #names are called keys in dictonaries to access the data
+# 'basket': [1,2,3],
+# 'greet': 'Hello',
+#   'age': 20
+# }
+#
 # user2 = dict(name='By')
 # print(user.get('age', 55))
 # print(user2)
@@ -284,14 +293,15 @@ user ={
 # #also can declare the tuple like this
 # x,y,z, *other= (5,6,7,8,9,10)
 # print (x , other)
-# #my_tuple[1]='z'   can't do this
+# # my_tuple[1]='z'   can't do this
 # print(my_tuple[1])
 # print(5 in my_tuple)
 # #c   can be slice
-# new_tuple = my_tuple[1:2]
+# new_tuple = my_tuple[1:3]
 # print(new_tuple)
-# # print(my_tuple.count(5))
-# print(my_tuple.index(3))
+# print(my_tuple.count(5))
+# print(my_tuple.index(4))
+
 
 
 # c  SET  set
@@ -302,7 +312,7 @@ user ={
 # my_set1= {1,2,3,3,4,4,5,5}
 # print (my_set)
 # print(my_set1) # will not duplicate the 5
-
+#
 # my_set.add(100)
 # my_set.add(2)
 # print(my_set)
@@ -365,10 +375,10 @@ user ={
 # c we have True and False
 # c Example
 
-# is_old= True
+# is_old= False
 # is_licensed= True
-
-
+#
+#
 # if is_old:
 #   print("you are old enough to drive!")
 # elif is_licensed:
@@ -405,16 +415,16 @@ user ={
 
 # is_Friend = True
 # is_User=  True
-
+#
 # if is_Friend or is_User:
 #   print('best friends forever')
 # print('a' > 'A')
 # #c google circuiting
 # print(1<2<3<4<5)
 # print(1<2<3>4<5)  # return false
-# c we have seen operators
-# c   < > ==  >= <= !=
-# c and or not  key words
+# # c we have seen operators
+# # c   < > ==  >= <= !=
+# # c and or not  key words
 # print (not(True))
 # print(not (1==1))
 
@@ -440,7 +450,7 @@ user ={
 # print (int == bool)
 # #print (10 ==10.0)
 # print ([] == [])
-
+#
 # print ([] is [])
 # print (int is bool)
 # print (10 is 10)
@@ -478,7 +488,7 @@ user ={
 
 # for item in user:  # or user.keys() this only print the key of dictonaire
 #   print(item)
-
+#
 # for item in user.items():  # this return the keys and values
 #   print(item)
 
@@ -518,8 +528,8 @@ user ={
 
 # for number in range(0,10,2):  # third value step over
 #   print(number)
-
-# for _ in range(2):
+#
+# for _ in range(3):
 #   print(list(range(10)))
 
 
@@ -554,14 +564,14 @@ user ={
 
 # #c when use while or For
 # #c
-
+#
 # while True:
 #   response = input('say something')
 #   if(response =='bye'):
 #     break
 
 
-my_list = [1, 2, 3]
+# my_list = [1, 2, 3]
 
 # for item in my_list:
 #    #c still thinking for exmple
@@ -602,9 +612,8 @@ my_list = [1, 2, 3]
 # c readability
 # c predictability
 # c Do not repeat your self
-# list1 = [1,2,3,4,5,6,7]
 
-# print((len(list1)//2)+1)
+
 
 # mitad
 # for i in list1:
@@ -614,14 +623,14 @@ my_list = [1, 2, 3]
 #    print(i)
 
 
-list = [
-    [1, 2, 3, 4, 5, 6, 7],
-    [1, 2, 3, 4, 5, 6, 7],
-    [1, 2, 3, 4, 5, 6, 7],
-    [1, 2, 3, 4, 5, 6, 7],
-    [1, 2, 3, 4, 5, 6, 7],
-    [1, 2, 3, 4, 5, 6, 7]
-]
+# list = [
+#     [1, 2, 3, 4, 5, 6, 7],
+#     [1, 2, 3, 4, 5, 6, 7],
+#     [1, 2, 3, 4, 5, 6, 7],
+#     [1, 2, 3, 4, 5, 6, 7],
+#     [1, 2, 3, 4, 5, 6, 7],
+#     [1, 2, 3, 4, 5, 6, 7]
+# ]
 # x =(len(list) //2)+1
 
 # # print (x)
@@ -657,8 +666,8 @@ list = [
 # #c this is called default parameters in function
 # def say_hello(name="Anakin", emoji=":-("):
 #   print(f'Hello {name}  {emoji}')
-
-
+#
+#
 #  #c it is print default parameter but can receive new ones
 # say_hello()
 
@@ -680,7 +689,7 @@ list = [
 # say_some(emoji=':-p', name='Byron')
 
 # Lista_amigo= ['wendy','nico', 'ka','ma']
-
+#
 # for i in Lista_amigo:
 #   say_some(i,':-p')
 
@@ -711,7 +720,6 @@ list = [
 #     print(f"Ya eres mayor de edad tienes {age} y puedes conducir")
 #   else:
 #     print(f"No tienes la edad suficiente para conducir apenas tienes {age}")
-
 
 # Testla = input("me podrias indicar que edad tienes?")
 # car_drive(int(Testla))
@@ -750,8 +758,8 @@ list = [
 # def super_func(*args):
 #   print(args)
 #   return sum(args)
-
-# super_func(1,2,3,4,5)
+#
+# # super_func(1,2,3,4,5)
 # print(super_func(1,2,3,4,5))
 
 
@@ -776,26 +784,31 @@ list = [
 # c create a function called highed_even(list) q va tomar
 # c una lista
 
-# def higest_even(*args):
-#   list=[]
-#   for items in args:
-#    if items % 2==0:
-#      list.append(items)
-#      list.sort()
-#   print(list[-1])
+def higest_even(*args):
+    list = []
 
-#   #c tambien se puede usar la funcion max(list)
+    for items in args:
+        if items % 2 == 0:
+            list.append(items)
+            list.sort()
 
-# higest_even(10,8,7,9,11,17,4,3)
+    print(list[-1])
+
+  #c tambien se puede usar la funcion max(list)
+
+
+higest_even(20, 10,8,7,9,11,17,4,3)
+
+
 
 
 # c Walrus Operator   :=
-
+#
 # b = 'Helloooooooooo'
 # if (len(b)> 10):
 #   print(f'too long {len(b)} elements')
-
-
+#
+#
 # a = 'Helloooooooooo'
 # if ((n := len(a)) > 10): # n is assgined to len of a
 #   print(f'too long {n} elements')
@@ -828,7 +841,7 @@ list = [
 # total = 0
 
 # def count():
-#   global total#global let usethe global variable total
+#   global total#global let use the global variable total
 #   total+=1
 #   return total
 
@@ -845,10 +858,10 @@ list = [
 #     nonlocal x
 #     x="non local"
 #     print("inner:", x)
-
+#
 #   inner()
 #   print("outer", x)
-
+#
 # outer()
 
 # x = 5
